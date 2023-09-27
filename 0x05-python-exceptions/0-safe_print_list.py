@@ -4,7 +4,7 @@ def safe_print_list(my_list=[], x=0):
     Args:
     my_list (list, optional) : the list to print. Defaults to [].
     x (int, optional) : index in the list. Defaults to 0.
-    
+
     Returns:
     x element of my_list
     """
