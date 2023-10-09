@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """My list class"""
 
+
 class MyList(list):
     """My List Class"""
     def __init__(self):
@@ -8,5 +9,5 @@ class MyList(list):
         super().__init__()
 
     def print_sorted(self):
-            """Sort and print list of numbers"""
-            print(sorted(self))
+        """Sort and print list of numbers"""
+        print(sorted(self))

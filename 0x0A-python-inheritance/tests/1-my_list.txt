@@ -1,0 +1,15 @@
+#Test case 1: empty list
+>>> MyList = __import__('1-my_list').MyList
+>>> my_list = MyList()
+>>> print(my_list)
+[]
+
+#Test case 2: prints string list
+>>> my_list.append('a')
+>>> print(my_list)
+['a']
+
+#Test case 3: prints int list
+>>> my_list.append(50)
+>>> print(my_list)
+['a', 50]
