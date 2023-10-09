@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-def lookup(obj):
-    """Prints all object types"""
+"""Lookup function"""
 
+
+def lookup(obj):
+    """Prints all object available"""
     return (dir(obj))
