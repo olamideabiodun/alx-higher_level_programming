@@ -10,3 +10,13 @@ AssertionError
 Traceback (most recent call last):
 ...
 AssertionError
+
+#Test Case 3: text is Spring
+>>> text_indentation("My Name is faruq")
+My Name is faruq
+
+#Test Case 4: input wrong type
+>>> text_indentation(12)
+Traceback (most recent call last):
+...
+TypeError: text must be a string
