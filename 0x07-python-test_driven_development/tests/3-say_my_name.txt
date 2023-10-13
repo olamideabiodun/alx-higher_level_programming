@@ -16,4 +16,4 @@ TypeError: last_name must be a string
 
 # Test case 4: Valid input with only a first name
 >>> say_my_name("Alice")
-My name is Alice
+My name is Alice 
