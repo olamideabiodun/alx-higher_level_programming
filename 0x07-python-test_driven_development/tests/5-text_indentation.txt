@@ -1,0 +1,12 @@
+#Test Case 1: Indentation check
+>>> text_indentation = __import__('5-text_indentation').text_indentation
+>>> assert text_indentation('a\n b') == 'b'
+Traceback (most recent call last):
+...
+AssertionError
+
+#Test Case 2: AssertionError
+>>> assert text_indentation('\ta\n \tb') == '\t\tb'
+Traceback (most recent call last):
+...
+AssertionError
