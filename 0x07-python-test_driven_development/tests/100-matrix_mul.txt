@@ -1,0 +1,48 @@
+#Test Case 1: correct input
+>>> matrix_mul = __import__('100-matrix_mul').matrix_mul
+>>> print(matrix_mul([[1, 2], [3, 4]], [[1, 2], [3, 4]]))
+[[7, 10], [15, 22]]
+
+#Test Case 2: empty input (m_a)
+>>> print(matrix_mul([[]], [[]]))
+Traceback (most recent call last):
+...
+ValueError: m_a can't be empty
+
+#Test Case 3: empty input (m_b)
+>>> print(matrix_mul([[]], [[1, 2], [3, 4]]))
+Traceback (most recent call last):
+...
+ValueError: m_b can't be empty
+
+#Test Case 4: List of list of numbers (m_b)
+>>> print(matrix_mul([[1, 5]], "aw"))
+Traceback (most recent call last):
+...
+TypeError: m_b must be a list
+
+#Test Case 5: List of list of numbers (m_a)
+>>> print(matrix_mul("aw", [[6, -8]]))
+Traceback (most recent call last):
+...
+TypeError: m_a must be a list
+
+#Test Case 6: Missing one argument
+>>> print(matrix_mul([[1, 5]]))
+Traceback (most recent call last):
+...
+TypeError: matrix_mul() missing 1 required positional argument: 'm_b'
+
+#Test Case 7: Missing 2 arguments
+>>> print(matrix_mul())
+Traceback (most recent call last):
+...
+TypeError: matrix_mul() missing 2 required positional arguments: 'm_a' and 'm_b'
+
+#Test Case 8: List of lists but not correct 
+>>> print(matrix_mul([[1, 5], ["a"]], [[[6, -8]]]))
+Traceback (most recent call last):
+...
+TypeError: m_a should contain only integers or floats
+
+
