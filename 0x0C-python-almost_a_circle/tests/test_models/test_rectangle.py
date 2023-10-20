@@ -162,3 +162,7 @@ class TestRectangle_width(unittest.TestCase):
     def test_nan_width(self):
         with self.assertRaisesRegex(TypeError, "width must be an integer"):
             Rectangle(float('nan'), 2)
+
+    def test_kwargs_rectangle(self):
+        r = update(height=3, width=4)
+        self.assertEqual(r.area(), 12)
