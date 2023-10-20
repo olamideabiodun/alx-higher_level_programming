@@ -45,4 +45,8 @@ Traceback (most recent call last):
 ...
 TypeError: m_a should contain only integers or floats
 
-
+#Test Case 9: List of lists but not correct
+>>> print(matrix_mul([[1, 5], [1, 5]], [["a", -8]]))
+Traceback (most recent call last):
+...
+TypeError: m_b should contain only integers or floats
