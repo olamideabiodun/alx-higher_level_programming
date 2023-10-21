@@ -20,7 +20,6 @@ class Square(Rectangle):
         self.width = value
         self.height = value
 
-
     def update(self, *args, **kwargs):
         """Updates the square's attributes based on input parameters"""
         if len(args) >= 1:
