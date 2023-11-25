@@ -1,14 +1,21 @@
-#!/usr/bin/python3
-"""Adds two integers"""
+#!usr/bin/python3
+"""Function that adds integers"""
 
 
 def add_integer(a, b=98):
-    """Function that adds integers"""
-    if not isinstance(a, int) and not isinstance(a, float):
+    """adds two integers"""
+    if not isinstance(a, float) and not isinstance(a, int):
         raise TypeError("a must be an integer")
-    if not isinstance(b, int) and not isinstance(b, float):
+    if not isinstance(b, float) and not isinstance(b, int):
         raise TypeError("b must be an integer")
-    a = int(a)
-    b = int(b)
+    if isinstance(a, float):
+        a = float(a)
+    elif isinstance(a, int):
+        a = int(a)
+    if isinstance(b, float):
+        b = float(b)
+    elif isinstance(b, int):
+        b = int(b)
+
     sum = a + b
     return sum
