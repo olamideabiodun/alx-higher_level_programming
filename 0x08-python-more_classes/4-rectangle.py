@@ -55,3 +55,7 @@ class Rectangle:
             if i != self.__height - 1:
                 rec.append("\n")
         return ("". join(rec))
+
+    def __repr__(self):
+        """returns the repr of the rectangle"""
+        return f"Rectangle(width = {self.__width}, height = {self.__height})"
