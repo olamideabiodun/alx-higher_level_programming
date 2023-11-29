@@ -61,5 +61,5 @@ class Rectangle:
         return f"Rectangle(width = {self.__width}, height = {self.__height})"
 
     def __del__(self):
-         print("Bye rectangle...")
-         pass
+        print("Bye rectangle...")
+        pass
