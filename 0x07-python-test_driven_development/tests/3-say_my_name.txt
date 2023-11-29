@@ -1,0 +1,38 @@
+#Test Case 1: import module
+>>> say_my_name = __import__('3-say_my_name').say_my_name
+>>> say_my_name("John", "Smith")
+My name is John Smith
+
+#Test Case 2: single input
+>>> say_my_name("faruq")
+My name is faruq
+
+#Test Case 3: three input
+>>> say_my_name("yasir", "aarol", "faruq")
+Traceback (most recent call last):
+...
+TypeError: say_my_name() takes from 1 to 2 positional arguments but 3 were given
+
+#Test Case 4: first_name wrong input
+>>> say_my_name(52, "yomi")
+Traceback (most recent call last):
+...
+TypeError: first_name must be a string
+
+#Test Case 5: last_name wrong input
+>>> say_my_name("yomi", 78)
+Traceback (most recent call last):
+...
+TypeError: last_name must be a string
+
+#Test Case 6: single wrong input
+>>> say_my_name(52)
+Traceback (most recent call last):
+...
+TypeError: first_name must be a string
+
+#Test Case 7: single wrong input
+>>> say_my_name(y)
+Traceback (most recent call last):
+...
+NameError: name 'y' is not defined

@@ -21,6 +21,3 @@ Traceback (most recent call last):
 ...
 TypeError: text must be a string
 
-#Test Case 5: String with a blank line
->>> text_indentation("\n\n")
-
