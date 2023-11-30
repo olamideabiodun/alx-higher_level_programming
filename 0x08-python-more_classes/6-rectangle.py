@@ -4,14 +4,15 @@
 
 class Rectangle:
     """This is a rectangle class"""
+    number_of_instances = 0
 
-    instance = 0
+
     def __init__(self, width=0, height=0):
         """INitializes the rectangle """
-
+        type(self).number_of_instances += 1
         self.height = height
         self.width = width
-        Rectangle.instance += 1
+
 
     @property
     def width(self):
@@ -37,10 +38,7 @@ class Rectangle:
             raise ValueError("height must be >= 0")
         self.__height = value
 
-    @classmethod
-    def number_of_instances(cls):
-        """counts instances"""
-        return cls.instance
+
 
     def area(self):
         """Defines the area"""
@@ -69,6 +67,7 @@ class Rectangle:
         return f"Rectangle(width = {self.__width}, height = {self.__height})"
 
     def __del__(self):
-        Rectangle.instance -= 1
+        type(self).number_of_instances -= 1
+
         print("Bye rectangle...")
         pass
