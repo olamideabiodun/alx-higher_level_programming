@@ -1,0 +1,29 @@
+#Test Case 1: empty list
+>>> MyList = __import__('1-my_list').MyList
+>>> my_list = MyList()
+>>> print(my_list)
+[]
+
+#Test case 2: prints string list
+ >>> my_list.append('a')
+ >>> print(my_list)
+ ['a']
+
+ #Test case 3: prints int list
+ >>> my_list.append(50)
+ >>> print(my_list)
+ ['a', 50]
+
+ #Test case 4: Checking for one negative number
+ >>> my_list.append(-1)
+ >>> print(my_list)
+ ['a', 50, -1]
+
+ #Test case 5: Checking for all negative numbers
+ >>> neg_l = MyList()
+ >>> neg_l.append(-1)
+ >>> neg_l.append(-2)
+ >>> neg_l.append(-3)
+ >>> print(neg_l)
+ [-1, -2, -3]
+ 
